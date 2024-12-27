@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>697</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>-1</y>
+      <width>1031</width>
+      <height>42</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Policy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_5"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="uploadFileButton">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 800 9pt &quot;&quot;;
+background-color: rgb(0, 0, 255);
+background-color: qconicalgradient(cx:0.478, cy:1, angle:0, stop:0 rgba(9, 6, 153, 255), stop:0.501 rgba(9, 6, 153, 255), stop:0.505 rgba(255, 0, 0, 255));
+color: rgb(255, 255, 255);
+border-radius: 0.3em;
+padding: 0.3em 0.5em;</string>
+       </property>
+       <property name="text">
+        <string>Upload File</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="selectBoat">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 800 9pt &quot;&quot;;
+background-color: rgb(0, 0, 255);
+background-color: qconicalgradient(cx:0.478, cy:1, angle:0, stop:0 rgba(9, 6, 153, 255), stop:0.501 rgba(9, 6, 153, 255), stop:0.505 rgba(255, 0, 0, 255));
+color: rgb(255, 255, 255);
+border-radius: 0.3em;
+padding: 0.3em 0.5em;</string>
+       </property>
+       <property name="text">
+        <string>Select Boat</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="viewAnalytics">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 800 9pt &quot;&quot;;
+background-color: rgb(0, 0, 255);
+background-color: qconicalgradient(cx:0.478, cy:1, angle:0, stop:0 rgba(9, 6, 153, 255), stop:0.501 rgba(9, 6, 153, 255), stop:0.505 rgba(255, 0, 0, 255));
+color: rgb(255, 255, 255);
+border-radius: 0.3em;
+padding: 0.3em 0.5em;</string>
+       </property>
+       <property name="text">
+        <string>View Analytics</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="uploadVideoButton">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 800 9pt &quot;&quot;;
+background-color: rgb(0, 0, 255);
+background-color: qconicalgradient(cx:0.478, cy:1, angle:0, stop:0 rgba(9, 6, 153, 255), stop:0.501 rgba(9, 6, 153, 255), stop:0.505 rgba(255, 0, 0, 255));
+color: rgb(255, 255, 255);
+border-radius: 0.3em;
+padding: 0.3em 0.5em;</string>
+       </property>
+       <property name="text">
+        <string>Upload Video</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="playPauseButton">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 800 9pt &quot;&quot;;
+background-color: rgb(0, 0, 255);
+background-color: qconicalgradient(cx:0.478, cy:1, angle:0, stop:0 rgba(9, 6, 153, 255), stop:0.501 rgba(9, 6, 153, 255), stop:0.505 rgba(255, 0, 0, 255));
+color: rgb(255, 255, 255);
+border-radius: 0.3em;
+padding: 0.2em 2em;</string>
+       </property>
+       <property name="text">
+        <string>Play / Pause</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSlider" name="horizontalSlider">
+       <property name="styleSheet">
+        <string notr="true">QSlider::groove:horizontal {
+border: 1px solid #bbb;
+background: white;
+height: 10px;
+border-radius: 4px;
+}
+
+QSlider::sub-page:horizontal {
+background: qlineargradient(x1: 0, y1: 0,    x2: 0, y2: 1,
+    stop: 0 #66e, stop: 1 #bbf);
+background: qlineargradient(x1: 0, y1: 0.2, x2: 1, y2: 1,
+    stop: 0 #bbf, stop: 1 #55f);
+border: 1px solid #777;
+height: 10px;
+border-radius: 4px;
+}
+
+QSlider::add-page:horizontal {
+background: #fff;
+border: 1px solid #777;
+height: 10px;
+border-radius: 4px;
+}
+
+QSlider::handle:horizontal {
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+    stop:0 #eee, stop:1 #ccc);
+border: 1px solid #777;
+width: 13px;
+margin-top: -2px;
+margin-bottom: -2px;
+border-radius: 4px;
+}
+
+QSlider::handle:horizontal:hover {
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+    stop:0 #fff, stop:1 #ddd);
+border: 1px solid #444;
+border-radius: 4px;
+}
+
+QSlider::sub-page:horizontal:disabled {
+background: #bbb;
+border-color: #999;
+}
+
+QSlider::add-page:horizontal:disabled {
+background: #eee;
+border-color: #999;
+}
+
+QSlider::handle:horizontal:disabled {
+background: #eee;
+border: 1px solid #aaa;
+border-radius: 4px;
+}</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="skipToFirstVideo">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 800 9pt &quot;&quot;;
+background-color: rgb(0, 0, 255);
+background-color: qconicalgradient(cx:0.478, cy:1, angle:0, stop:0 rgba(9, 6, 153, 255), stop:0.501 rgba(9, 6, 153, 255), stop:0.505 rgba(255, 0, 0, 255));
+color: rgb(255, 255, 255);
+border-radius: 0.3em;
+padding: 0.3em 0.5em;</string>
+       </property>
+       <property name="text">
+        <string>Skip</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>50</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>40</y>
+      <width>1031</width>
+      <height>621</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_6">
+     <property name="sizeConstraint">
+      <enum>QLayout::SizeConstraint::SetNoConstraint</enum>
+     </property>
+     <item>
+      <widget class="QGraphicsView" name="videoGraphicsView"/>
+     </item>
+     <item>
+      <widget class="QGraphicsView" name="graphicsView">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>500</width>
+         <height>500</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>659</y>
+      <width>1021</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_7">
+     <item>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 800 9pt &quot;&quot;;
+background-color: rgb(0, 0, 255);
+background-color: qconicalgradient(cx:0.478, cy:1, angle:0, stop:0 rgba(9, 6, 153, 255), stop:0.501 rgba(9, 6, 153, 255), stop:0.505 rgba(255, 0, 0, 255));
+color: rgb(255, 255, 255);
+border-radius: 0.3em;
+padding: 0.2em 2em;</string>
+       </property>
+       <property name="text">
+        <string>Other</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>40</y>
+      <width>511</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_5">
+     <item row="0" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="minusButton">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 800 9pt &quot;&quot;;
+background-color: rgb(0, 0, 255);
+background-color: qconicalgradient(cx:0.478, cy:1, angle:0, stop:0 rgba(9, 6, 153, 255), stop:0.501 rgba(9, 6, 153, 255), stop:0.505 rgba(255, 0, 0, 255));
+color: rgb(255, 255, 255);
+border-radius: 0.3em;
+padding: 0.2em 2em;</string>
+         </property>
+         <property name="text">
+          <string>-</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="plusButton">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 800 9pt &quot;&quot;;
+background-color: rgb(0, 0, 255);
+background-color: qconicalgradient(cx:0.478, cy:1, angle:0, stop:0 rgba(9, 6, 153, 255), stop:0.501 rgba(9, 6, 153, 255), stop:0.505 rgba(255, 0, 0, 255));
+color: rgb(255, 255, 255);
+border-radius: 0.3em;
+padding: 0.2em 2em;</string>
+         </property>
+         <property name="text">
+          <string>+</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="metricLabel1">
+         <property name="text">
+          <string>metric 1</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Policy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>60</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="metricLabel2">
+         <property name="text">
+          <string>metric 2</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_6">
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QSlider" name="SpeedSlider">
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+         <property name="tickPosition">
+          <enum>QSlider::TickPosition::NoTicks</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Policy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>80</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
